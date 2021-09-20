@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="qhH-5H-WcQ">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="H0j-uA-PIL" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="H0j-uA-PIL" customClass="SettingsViewController" customModule="colrizedAppWithDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FUS-Q9-m7u">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,14 +104,24 @@
                                                 <rect key="frame" x="-2" y="0.0" width="174" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemRedColor"/>
+                                                <connections>
+                                                    <action selector="redSliderAction" destination="H0j-uA-PIL" eventType="valueChanged" id="l3P-W7-dkO"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rtU-ik-Tg2">
                                                 <rect key="frame" x="-2" y="46" width="174" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemGreenColor"/>
+                                                <connections>
+                                                    <action selector="greenSliderAction" destination="H0j-uA-PIL" eventType="valueChanged" id="RdG-C0-WQe"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jvK-Tf-Jjd">
                                                 <rect key="frame" x="-2" y="92" width="174" height="31"/>
+                                                <color key="maximumTrackTintColor" systemColor="linkColor"/>
+                                                <connections>
+                                                    <action selector="blueSliderAction" destination="H0j-uA-PIL" eventType="valueChanged" id="eng-fJ-LeB"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -154,6 +164,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P6U-4m-zbp"/>
+                    <connections>
+                        <outlet property="blueValueLabel" destination="Gfk-bm-Mbc" id="A9L-Fc-oWX"/>
+                        <outlet property="blueValueTextField" destination="HVP-SB-TzI" id="hF2-sC-NKq"/>
+                        <outlet property="colorView" destination="axN-6L-GUs" id="4gc-tn-1cF"/>
+                        <outlet property="greenSlider" destination="rtU-ik-Tg2" id="h6k-y8-tpj"/>
+                        <outlet property="greenValueLabel" destination="Hbz-64-ZPl" id="sNR-Wz-4uM"/>
+                        <outlet property="greenValueTexField" destination="HpE-hg-o3Z" id="0dS-ox-9zn"/>
+                        <outlet property="redSlider" destination="eXb-H1-Tj4" id="ons-3L-BPQ"/>
+                        <outlet property="redValueLabel" destination="PO7-aq-t6S" id="Ofc-yY-b12"/>
+                        <outlet property="redValueTextField" destination="1ev-dP-PDd" id="mNx-Vg-Ize"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7D-Zd-Avq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,6 +201,9 @@
     </scenes>
     <resources>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
