@@ -132,17 +132,26 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ev-dP-PDd">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="H0j-uA-PIL" id="Eri-Xg-avg"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpE-hg-o3Z">
                                                 <rect key="frame" x="0.0" y="48" width="45" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="H0j-uA-PIL" id="yIM-ee-7IJ"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVP-SB-TzI">
                                                 <rect key="frame" x="0.0" y="96" width="45" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="H0j-uA-PIL" id="5dE-jH-398"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -150,6 +159,11 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="DvF-VQ-P8G" firstAttribute="leading" secondItem="bN1-8M-t7g" secondAttribute="trailing" constant="4" id="AEe-UO-SDe"/>
+                                    <constraint firstItem="D4z-AC-Zet" firstAttribute="leading" secondItem="uUy-Jq-WSj" secondAttribute="trailing" constant="4" id="Oao-EU-9nj"/>
+                                    <constraint firstItem="bN1-8M-t7g" firstAttribute="leading" secondItem="D4z-AC-Zet" secondAttribute="trailing" constant="4" id="PZc-Ti-W1O"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCE-R2-ltB">
                                 <rect key="frame" x="124.5" y="458" width="71" height="38"/>

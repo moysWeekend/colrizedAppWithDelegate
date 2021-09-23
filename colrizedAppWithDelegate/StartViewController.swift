@@ -13,12 +13,6 @@ protocol SettingsViewControllerDelegate {
 
 class StartViewController: UIViewController {
 
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let settingsVC = segue.destination as! SettingsViewController
         settingsVC.viewColor = view.backgroundColor
