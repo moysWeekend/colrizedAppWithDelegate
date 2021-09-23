@@ -158,6 +158,9 @@
                                     <fontDescription key="titleFontDescription" type="italicSystem" pointSize="20"/>
                                     <color key="baseBackgroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="H0j-uA-PIL" eventType="touchUpInside" id="W7j-s9-9Aj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xNx-FS-Qs8"/>
